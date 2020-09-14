@@ -432,13 +432,12 @@ function! zettel#vimwiki#create(...)
   call vimwiki#base#open_link(':e ', format)
   " add basic template to the new file
   if wiki_not_exists
-    call zettel#vimwiki#template(a:1, date)
     return format
   endif
   return -1
 endfunction
 
-" front_matter can be either list or dict. if it is a dict, then convert it to
+" front_matter can be either list or dict. if it is a dict, then co":nvert it to
 " list
 function! s:front_matter_list(front_matter)
   if type(a:front_matter) ==? v:t_list
