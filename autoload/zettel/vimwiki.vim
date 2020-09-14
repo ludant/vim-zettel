@@ -437,7 +437,7 @@ function! zettel#vimwiki#create(...)
   return -1
 endfunction
 
-" front_matter can be either list or dict. if it is a dict, then co":nvert it to
+" front_matter can be either list or dict. if it is a dict, then convert it to
 " list
 function! s:front_matter_list(front_matter)
   if type(a:front_matter) ==? v:t_list
